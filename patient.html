@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 32px;
+        }
+
+        nav {
+            background: #34495e;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            margin: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-box {
+            width: 350px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .form-box h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Appointment Management System for Doctors</h1>
+</header>
+
+<nav> <a href="Homepage.html">
+    <button>Home</button>
+</a>
+    <button>Patient</button>
+    <button>Doctor</button>
+    <button>Appointment</button>
+    <button>Payment</button>
+    <button>Receipt</button>
+    <button>Admin</button>
+</nav>
+
+<div class="form-box">
+    <h2>Patient Registration</h2>
+
+    <form>
+        Name:<br>
+        <input type="text" name="name" required>
+
+        Gender:<br>
+        <select name="gender" required>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        Age:<br>
+        <input type="number" name="age" required>
+
+        Phone:<br>
+        <input type="text" name="phone" required>
+
+        Email:<br>
+        <input type="email" name="email" required>
+
+        Password:<br>
+        <input type="password" name="password" required>
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+<footer>
+    Developed By Wasef Ibnul Sinan
+</footer>
+
+</body>
+</html>
